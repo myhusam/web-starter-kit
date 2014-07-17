@@ -405,6 +405,7 @@ body {
   /* 26px */
   font-weight: 300;
   color: #404040;
+  direction: rtl;
   position: relative;
 }
 body::after {
@@ -1577,7 +1578,7 @@ div.highlight > pre > code .il, code .highlight .il {
 @media only screen and (min-width: 620px) {
   .quote__content::before {
     top: 225px;
-    left: -210px;
+    right: -210px;
     font-size: 540px;
   }
 }
@@ -1822,7 +1823,7 @@ div.highlight > pre > code .il, code .highlight .il {
     background: #404040;
     display: inline-block;
     padding: 5px 7px;
-    right: 127px;
+    left: 127px;
     top: 143px;
     z-index: 1;
     color: rgba(255, 255, 255, 0.5);
@@ -1834,7 +1835,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-left: 15px;
     padding-right: 15px;
     top: 126px;
-    right: 230px;
+    left: 230px;
   }
 }
 @media only screen and (min-width: 620px) {
@@ -1842,14 +1843,14 @@ div.highlight > pre > code .il, code .highlight .il {
     content: "\e00e";
     font-family: "icons";
     font-size: 150px;
-    right: 40px;
+    left: 40px;
     top: 185px;
   }
 }
 @media only screen and (min-width: 800px) {
   .next-lessons::after {
     font-size: 210px;
-    right: 120px;
+    left: 120px;
   }
 }
 
@@ -1996,7 +1997,7 @@ div.highlight > pre > code .il, code .highlight .il {
   .g--half,
   .g-wide--half {
     float: left;
-    margin-right: 3.7%;
+    margin-right: 1.0%;
     width: 48.15%;
   }
 
@@ -2089,6 +2090,7 @@ ol {
   /* 26px */
   padding-top: 1.6250em;
   padding-bottom: 0;
+
 }
 
 .medium,
@@ -2268,7 +2270,7 @@ ol {
 
 ul li {
   position: relative;
-  padding-left: 16px;
+  padding-right: 16px;
 }
 ul li::before {
   font-family: "icons";
@@ -2277,7 +2279,7 @@ ul li::before {
   font-weight: 400;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   line-height: 26px;
 }
 ul li::before {
@@ -2289,7 +2291,7 @@ ol {
 }
 ol > li {
   position: relative;
-  padding-left: 32px;
+  padding-right: 32px;
 }
 ol > li::before {
   counter-increment: list;
@@ -2298,7 +2300,7 @@ ol > li::before {
   font-weight: 400;
   display: inline-block;
   position: absolute;
-  left: 0;
+  right: 0;
 }
 ol > li:nth-child(10n) ~ li::before, ol > li:nth-child(10n)::before {
   content: counter(list);
@@ -2323,7 +2325,7 @@ ul.list-links a::before {
   font-weight: 400;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   line-height: 26px;
 }
 ul.list-links a::before {
@@ -2360,7 +2362,7 @@ ol.list-links li a::before {
   font-weight: 400;
   display: inline-block;
   position: absolute;
-  left: 0;
+  right: 0;
 }
 ol.list-links li:nth-child(10n) ~ li a::before, ol.list-links li:nth-child(10n) a::before {
   content: counter(list);
@@ -2409,7 +2411,7 @@ ol.list-links.list-links--secondary a::before {
   font-weight: 400;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   line-height: 26px;
 }
 .list-anchor a::before {
